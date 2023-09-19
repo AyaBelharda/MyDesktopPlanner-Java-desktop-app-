@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@styleHome.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.homeController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" layoutX="-7.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../TP2_POO/src/pics/acceuil.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="80.0" layoutY="163.0" prefHeight="210.0" prefWidth="887.0" style="-fx-background-color: #ef233c50; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="homeCard">
+         <children>
+            <Button layoutX="669.0" layoutY="144.0" mnemonicParsing="false" onAction="#switcToCalender" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #d90429; -fx-border-radius: 20; -fx-border-color: white;" text="Voir calendrier" textFill="#ffd0d0">
+               <font>
+                  <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+               </font></Button>
+            <Text fill="#ffcdb2" layoutX="25.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calendrier">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="993.0" layoutY="164.0" prefHeight="210.0" prefWidth="354.0" style="-fx-background-color: #ef233c70; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="homeCard">
+         <children>
+            <Text fill="#ffcdb2" layoutX="17.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projets">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="50.0" />
+               </font>
+            </Text>
+            <Button layoutX="140.0" layoutY="146.0" mnemonicParsing="false" onAction="#switchToProjectsList" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #d90429; -fx-border-radius: 20; -fx-border-color: white;" text="Voir projets" textFill="#ffd0d0">
+               <font>
+                  <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="78.0" layoutY="405.0" prefHeight="210.0" prefWidth="300.0" style="-fx-background-color: #ef233c50; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="homeCard">
+         <children>
+            <Button layoutX="57.0" layoutY="139.0" mnemonicParsing="false" onAction="#switchToBadgesList" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #d90429; -fx-border-radius: 20; -fx-border-color: white;" text="Voir Badges" textFill="#ffd0d0">
+               <font>
+                  <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+               </font>
+            </Button>
+            <Text fill="#ffcdb2" layoutX="21.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Badges">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="50.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="415.0" layoutY="409.0" prefHeight="210.0" prefWidth="610.0" style="-fx-background-color: #ef233c50; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="homeCard">
+         <children>
+            <Text fill="#ffcdb2" layoutX="15.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taches">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="50.0" />
+               </font>
+            </Text>
+            <Button layoutX="396.0" layoutY="146.0" mnemonicParsing="false" onAction="#switchToTachesList" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #d90429; -fx-border-radius: 20; -fx-border-color: white;" text="Voir taches" textFill="#ffd0d0">
+               <font>
+                  <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="1048.0" layoutY="408.0" prefHeight="210.0" prefWidth="300.0" style="-fx-background-color: #ef233c70; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" styleClass="homeCard">
+         <children>
+            <Text fill="#ffcdb2" layoutX="18.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compte">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="50.0" />
+               </font>
+            </Text>
+            <Button layoutX="82.0" layoutY="146.0" mnemonicParsing="false" onAction="#switchToAccountSettings" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: #d90429; -fx-border-radius: 20; -fx-border-color: white;" text="Voir compte" textFill="#ffd0d0">
+               <font>
+                  <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <HBox prefHeight="57.0" prefWidth="1366.0" style="-fx-background-color: #e5383b; -fx-background-radius: 0 0 40 40; -fx-alignment: center;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="welcome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font name="Lucida Console" size="19.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="166.0" style="-fx-background-color: #25242277; -fx-background-radius: 10; -fx-alignment: center;" text="Déconnexion" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Console" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pics/icons8-go-back-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

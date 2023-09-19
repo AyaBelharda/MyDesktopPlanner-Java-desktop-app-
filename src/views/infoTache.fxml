@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="600.0" style="-fx-background-color: #00000090; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.tachesController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="103.0" prefHeight="188.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 50; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 50;">
+         <children>
+            <TextField fx:id="nom" layoutX="130.0" layoutY="24.0" prefHeight="25.0" prefWidth="299.0" promptText="Nom de la tache" />
+            <TextField fx:id="duree" layoutX="130.0" layoutY="55.0" prefHeight="25.0" prefWidth="104.0" promptText="Duree" />
+            <DatePicker fx:id="date" layoutX="131.0" layoutY="87.0" prefHeight="25.0" prefWidth="299.0" promptText="Date limite" />
+            <TextField fx:id="categorie" layoutX="129.0" layoutY="119.0" prefHeight="25.0" prefWidth="195.0" promptText="Catégorie" />
+            <MenuButton fx:id="couleur" layoutX="333.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Couleur">
+               <items>
+                  <MenuItem fx:id="red" mnemonicParsing="false" onAction="#handleRed" text="Rouge" />
+                  <MenuItem fx:id="green" mnemonicParsing="false" onAction="#handleGreen" text="Vert" />
+                  <MenuItem fx:id="blue" mnemonicParsing="false" onAction="#handleBlue" text="Bleu" />
+                  <MenuItem fx:id="purple" mnemonicParsing="false" onAction="#handleViolet" text="Violet" />
+                  <MenuItem fx:id="yellow" mnemonicParsing="false" onAction="#handleYellow" text="Jaune" />
+                  <MenuItem fx:id="cyan" mnemonicParsing="false" onAction="#handleCyan" text="Cyan" />
+                  <MenuItem fx:id="brown" mnemonicParsing="false" onAction="#handleBrwon" text="Marron" />
+                  <MenuItem fx:id="rose" mnemonicParsing="false" onAction="#handleRose" text="Rose" />
+                  <MenuItem fx:id="black" mnemonicParsing="false" onAction="#handleBlack" text="Noir" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="type" layoutX="240.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="195.0" text="Type de la tache">
+              <items>
+                <MenuItem fx:id="tSimple" mnemonicParsing="false" onAction="#handleTsimple" text="Tache simple" />
+                <MenuItem fx:id="tDeco" mnemonicParsing="false" onAction="#handleTDeco" text="Tache décomposable" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="priorite" layoutX="130.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Priorité">
+               <items>
+                  <MenuItem fx:id="high" mnemonicParsing="false" onAction="#handleHigh" text="High" />
+                  <MenuItem fx:id="medium" mnemonicParsing="false" onAction="#handleMedium" text="Medium" />
+                  <MenuItem fx:id="low" mnemonicParsing="false" onAction="#handleLow" text="Low" />
+               </items>
+            </MenuButton>
+            <TextField fx:id="heurDb" layoutX="240.0" layoutY="55.0" prefHeight="25.0" prefWidth="97.0" promptText="heur debut" />
+            <TextField fx:id="minDeb" layoutX="342.0" layoutY="55.0" prefHeight="25.0" prefWidth="88.0" promptText="minutes" />
+         </children>
+      </AnchorPane>
+      <TextField alignment="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="52.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 50; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2;" text="Saisir les informations de la tache">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="29.0" layoutY="303.0" prefHeight="52.0" prefWidth="551.0" style="-fx-background-color: #c00021; -fx-background-radius: 30; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2;">
+         <children>
+            <TextField fx:id="periodicite" disable="true" layoutX="126.0" layoutY="11.0" prefHeight="25.0" prefWidth="299.0" promptText="Periodicité" style="-fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 30; -fx-background-radius: 30;" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="528.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="11.0" prefWidth="48.0" style="-fx-background-radius: 50; -fx-background-color: red;" />
+      <Button layoutX="23.0" layoutY="364.0" mnemonicParsing="false" onAction="#ajouterTache" prefHeight="52.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 30; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 30;" text="Ajouter la tache" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

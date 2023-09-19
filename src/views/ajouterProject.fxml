@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="infoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="600.0" style="-fx-background-color: #00000090; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.projectsController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="103.0" prefHeight="202.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 50; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 50;">
+         <children>
+            <TextField fx:id="nom" layoutX="90.0" layoutY="17.0" prefHeight="43.0" prefWidth="391.0" promptText="Nom du projet" />
+            <TextArea fx:id="description" layoutX="90.0" layoutY="67.0" prefHeight="122.0" prefWidth="391.0" promptText="Description" style="-fx-background-color: #ff0000;" />
+         </children>
+      </AnchorPane>
+      <TextField alignment="CENTER" layoutX="21.0" layoutY="40.0" prefHeight="52.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 50; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2;" text="Saisir le nom du projet">
+         <font>
+            <Font name="Lucida Console" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="528.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="11.0" prefWidth="48.0" style="-fx-background-radius: 50; -fx-background-color: red;" />
+      <Button layoutX="21.0" layoutY="317.0" mnemonicParsing="false" onAction="#addPj" prefHeight="52.0" prefWidth="558.0" style="-fx-background-color: #c00021; -fx-background-radius: 30; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 30;" text="Ajouter la tache" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

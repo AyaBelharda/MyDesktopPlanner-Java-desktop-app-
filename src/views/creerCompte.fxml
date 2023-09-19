@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: RED;" stylesheets="@creerCompt.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.creerCompteController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.03997802734375" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../pics/creerCompte.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="365.0" layoutY="88.0" prefHeight="566.0" prefWidth="600.0" style="-fx-background-color: #4361ee70; -fx-background-radius: 70;" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="365.0" AnchorPane.topAnchor="88.0">
+         <children>
+            <Text fill="#3a0ca3" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creer un compte" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font name="Lucida Console" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="#3a0ca3" layoutX="28.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez vous saisir : ">
+               <font>
+                  <Font name="Lucida Comforta" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="userName" layoutX="51.0" layoutY="171.0" onKeyPressed="#handleStrock" prefHeight="60.0" prefWidth="500.0" promptText="Nom de l'utilisateur" style="-fx-padding: 0 0 0 50; -fx-background-radius: 20; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 20;" styleClass="textField">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="response" layoutX="50.0" layoutY="383.0" prefHeight="60.0" prefWidth="500.0" promptText="Réponse" style="-fx-padding: 0 0 0 50; -fx-background-radius: 20;" styleClass="textField">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passWord" layoutX="51.0" layoutY="240.0" prefHeight="60.0" prefWidth="313.0" promptText="Mot de passe" style="-fx-padding: 0 0 0 50; -fx-background-radius: 20;" styleClass="textField">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <MenuButton fx:id="ques" layoutX="51.0" layoutY="309.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="500.0" style="-fx-background-radius: 20; back: ;" styleClass="textField" text="Question de sécurité">
+              <items>
+                <MenuItem fx:id="firstMenuItem" mnemonicParsing="false" onAction="#handle1" text="Dans quelle ville êtes-vous né ?" />
+                <MenuItem fx:id="secondMenuItem" mnemonicParsing="false" onAction="#handle2" text="Quel est votre film favori ?" />
+                  <MenuItem fx:id="thirdMenuItem" mnemonicParsing="false" onAction="#handle3" text="Quelle est la marque de votre première voiture ?" />
+                  <MenuItem fx:id="fourthMenuItem" mnemonicParsing="false" onAction="#handle4" text="Quelle est votre couleur favorite ?" />
+              </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pics/icons8-mot-de-passe-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="63.0" layoutY="186.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/userPic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="63.0" layoutY="255.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/icons8-mot-de-passe-30.png" />
+               </image>
+            </ImageView>
+            <Button id="creerCompteBtn" layoutX="51.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleCreateAccounte" prefHeight="60.0" prefWidth="500.0" style="-fx-background-radius: 30; -fx-background-color: #3a0ca3; -fx-border-color: #240046; -fx-border-radius: 20; -fx-border-width: 2;" text="Creer le compte" textFill="#fffdfd">
+               <font>
+                  <Font name="Lucida Console" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="63.0" layoutY="398.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/icons8-mot-de-passe-30.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="39.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ff9e00; -fx-background-radius: 10;" text="   Retour" textFill="WHITE">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+     </Button>
+      <ImageView fitHeight="40.0" fitWidth="29.0" layoutX="66.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/icons8-go-back-50.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="dureeMin" layoutX="737.0" layoutY="328.0" onKeyPressed="#handleStrock" prefHeight="60.0" prefWidth="178.0" promptText="Duree minimale (min)" style="-fx-background-radius: 20; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 20;" styleClass="textField">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

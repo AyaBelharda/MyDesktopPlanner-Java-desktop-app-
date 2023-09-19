@@ -1,0 +1,15 @@
+#creerCompteBtn:hover{
+	-fx-background-color : "black";
+}
+
+.root{
+	-fx-font-family : "Lucida Console";
+	-fx-font-size : 15px;
+}
+
+.textField{
+	-fx-background-color : "white";
+	-fx-border-radius : 20;
+	-fx-border-color : "black";
+	-fx-border-width : 2px;
+}

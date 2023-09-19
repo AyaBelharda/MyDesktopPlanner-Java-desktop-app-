@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="tachePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="600.0" style="-fx-background-color: #000000BB; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.creneauController">
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="52.0" prefHeight="194.0" prefWidth="543.0" style="-fx-background-color: #FF0000AA; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="7.0" prefHeight="217.0" prefWidth="504.0" style="-fx-background-color: h; -fx-background-radius: 20;">
+               <children>
+                  <Text fill="WHITE" layoutX="23.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creneau" wrappingWidth="94.0">
+                     <font>
+                        <Font name="Lucida Console" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="etatCr" fill="WHITE" layoutX="389.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Libre" textAlignment="CENTER" wrappingWidth="94.0">
+                     <font>
+                        <Font name="Lucida Console" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="478.0" endY="-10.0" layoutX="21.0" layoutY="52.0" startX="-21.0" startY="-10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="70.0" prefHeight="50.0" prefWidth="507.0" style="-fx-background-color: #780000; -fx-background-radius: 20;">
+               <children>
+                  <Text fx:id="debutCr" fill="WHITE" layoutX="2.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Debut creneau" textAlignment="CENTER" wrappingWidth="504.0">
+                     <font>
+                        <Font name="Lucida Console" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="130.0" prefHeight="50.0" prefWidth="507.0" style="-fx-background-color: #780000; -fx-background-radius: 20;">
+               <children>
+                  <Text fx:id="finCr" fill="WHITE" layoutX="1.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fin creneau" textAlignment="CENTER" wrappingWidth="504.0">
+                     <font>
+                        <Font name="Lucida Console" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonText" layoutX="29.0" layoutY="305.0" mnemonicParsing="false" onAction="#handlePlannifierManuellement" prefHeight="50.0" prefWidth="543.0" style="-fx-background-color: #FF0000AA; -fx-background-radius: 20;" text="Plannifier manuellement une tache" textFill="WHITE">
+         <font>
+            <Font name="Lucida Console" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="509.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: red; -fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

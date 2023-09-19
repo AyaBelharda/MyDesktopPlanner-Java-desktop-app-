@@ -1,0 +1,64 @@
+
+
+
+
+
+.loginBtn{
+	-fx-background-color: white;
+}
+
+.loginBtn:hover {
+	-fx-background-color : "white";
+}
+
+#loginText{
+	
+}
+
+.textFont{
+	-fx-font-family : "Lucida Console";
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-alignment: center; /* Center the cell content */
+    -fx-padding: 10px; /* Set the padding around the cell content */
+    
+}
+
+.check-box {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-width: 16px;
+    -fx-height: 16px;
+}
+
+.check-box .tick-mark {
+    -fx-background-color: #333;
+    -fx-width: 8px;
+    -fx-height: 8px;
+    -fx-opacity: 0;
+}
+
+/* Handle the checked state */
+.check-box:selected .tick-mark {
+    -fx-opacity: 1;
+}
+
+/* Customize the checkbox label */
+.check-box .label {
+    -fx-padding: 0 0 0 10px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.item:hover{
+	-fx-background-color: #000000;
+}
